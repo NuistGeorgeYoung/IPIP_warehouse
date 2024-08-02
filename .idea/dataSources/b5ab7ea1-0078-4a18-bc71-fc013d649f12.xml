@@ -1334,446 +1334,901 @@
     <schema id="276" parent="1" name="ipip_ods">
       <Location>hdfs://single01:9000/hive312/warehouse/ipip_ods.db</Location>
     </schema>
-    <table id="277" parent="276" name="ipip_data">
+    <table id="277" parent="276" name="data">
       <Temporary>1</Temporary>
     </table>
-    <column id="278" parent="277" name="ext1">
+    <table id="278" parent="276" name="ipip_data">
+      <Temporary>1</Temporary>
+    </table>
+    <column id="279" parent="277" name="ext1">
       <DasType>int|4s</DasType>
       <Position>1</Position>
     </column>
-    <column id="279" parent="277" name="ext2">
+    <column id="280" parent="277" name="ext2">
       <DasType>int|4s</DasType>
       <Position>2</Position>
     </column>
-    <column id="280" parent="277" name="ext3">
+    <column id="281" parent="277" name="ext3">
       <DasType>int|4s</DasType>
       <Position>3</Position>
     </column>
-    <column id="281" parent="277" name="ext4">
+    <column id="282" parent="277" name="ext4">
       <DasType>int|4s</DasType>
       <Position>4</Position>
     </column>
-    <column id="282" parent="277" name="ext5">
+    <column id="283" parent="277" name="ext5">
       <DasType>int|4s</DasType>
       <Position>5</Position>
     </column>
-    <column id="283" parent="277" name="ext6">
+    <column id="284" parent="277" name="ext6">
       <DasType>int|4s</DasType>
       <Position>6</Position>
     </column>
-    <column id="284" parent="277" name="ext7">
+    <column id="285" parent="277" name="ext7">
       <DasType>int|4s</DasType>
       <Position>7</Position>
     </column>
-    <column id="285" parent="277" name="ext8">
+    <column id="286" parent="277" name="ext8">
       <DasType>int|4s</DasType>
       <Position>8</Position>
     </column>
-    <column id="286" parent="277" name="ext9">
+    <column id="287" parent="277" name="ext9">
       <DasType>int|4s</DasType>
       <Position>9</Position>
     </column>
-    <column id="287" parent="277" name="ext10">
+    <column id="288" parent="277" name="ext10">
       <DasType>int|4s</DasType>
       <Position>10</Position>
     </column>
-    <column id="288" parent="277" name="est1">
+    <column id="289" parent="277" name="est1">
       <DasType>int|4s</DasType>
       <Position>11</Position>
     </column>
-    <column id="289" parent="277" name="est2">
+    <column id="290" parent="277" name="est2">
       <DasType>int|4s</DasType>
       <Position>12</Position>
     </column>
-    <column id="290" parent="277" name="est3">
+    <column id="291" parent="277" name="est3">
       <DasType>int|4s</DasType>
       <Position>13</Position>
     </column>
-    <column id="291" parent="277" name="est4">
+    <column id="292" parent="277" name="est4">
       <DasType>int|4s</DasType>
       <Position>14</Position>
     </column>
-    <column id="292" parent="277" name="est5">
+    <column id="293" parent="277" name="est5">
       <DasType>int|4s</DasType>
       <Position>15</Position>
     </column>
-    <column id="293" parent="277" name="est6">
+    <column id="294" parent="277" name="est6">
       <DasType>int|4s</DasType>
       <Position>16</Position>
     </column>
-    <column id="294" parent="277" name="est7">
+    <column id="295" parent="277" name="est7">
       <DasType>int|4s</DasType>
       <Position>17</Position>
     </column>
-    <column id="295" parent="277" name="est8">
+    <column id="296" parent="277" name="est8">
       <DasType>int|4s</DasType>
       <Position>18</Position>
     </column>
-    <column id="296" parent="277" name="est9">
+    <column id="297" parent="277" name="est9">
       <DasType>int|4s</DasType>
       <Position>19</Position>
     </column>
-    <column id="297" parent="277" name="est10">
+    <column id="298" parent="277" name="est10">
       <DasType>int|4s</DasType>
       <Position>20</Position>
     </column>
-    <column id="298" parent="277" name="agr1">
+    <column id="299" parent="277" name="agr1">
       <DasType>int|4s</DasType>
       <Position>21</Position>
     </column>
-    <column id="299" parent="277" name="agr2">
+    <column id="300" parent="277" name="agr2">
       <DasType>int|4s</DasType>
       <Position>22</Position>
     </column>
-    <column id="300" parent="277" name="agr3">
+    <column id="301" parent="277" name="agr3">
       <DasType>int|4s</DasType>
       <Position>23</Position>
     </column>
-    <column id="301" parent="277" name="agr4">
+    <column id="302" parent="277" name="agr4">
       <DasType>int|4s</DasType>
       <Position>24</Position>
     </column>
-    <column id="302" parent="277" name="agr5">
+    <column id="303" parent="277" name="agr5">
       <DasType>int|4s</DasType>
       <Position>25</Position>
     </column>
-    <column id="303" parent="277" name="agr6">
+    <column id="304" parent="277" name="agr6">
       <DasType>int|4s</DasType>
       <Position>26</Position>
     </column>
-    <column id="304" parent="277" name="agr7">
+    <column id="305" parent="277" name="agr7">
       <DasType>int|4s</DasType>
       <Position>27</Position>
     </column>
-    <column id="305" parent="277" name="agr8">
+    <column id="306" parent="277" name="agr8">
       <DasType>int|4s</DasType>
       <Position>28</Position>
     </column>
-    <column id="306" parent="277" name="agr9">
+    <column id="307" parent="277" name="agr9">
       <DasType>int|4s</DasType>
       <Position>29</Position>
     </column>
-    <column id="307" parent="277" name="agr10">
+    <column id="308" parent="277" name="agr10">
       <DasType>int|4s</DasType>
       <Position>30</Position>
     </column>
-    <column id="308" parent="277" name="csn1">
+    <column id="309" parent="277" name="csn1">
       <DasType>int|4s</DasType>
       <Position>31</Position>
     </column>
-    <column id="309" parent="277" name="csn2">
+    <column id="310" parent="277" name="csn2">
       <DasType>int|4s</DasType>
       <Position>32</Position>
     </column>
-    <column id="310" parent="277" name="csn3">
+    <column id="311" parent="277" name="csn3">
       <DasType>int|4s</DasType>
       <Position>33</Position>
     </column>
-    <column id="311" parent="277" name="csn4">
+    <column id="312" parent="277" name="csn4">
       <DasType>int|4s</DasType>
       <Position>34</Position>
     </column>
-    <column id="312" parent="277" name="csn5">
+    <column id="313" parent="277" name="csn5">
       <DasType>int|4s</DasType>
       <Position>35</Position>
     </column>
-    <column id="313" parent="277" name="csn6">
+    <column id="314" parent="277" name="csn6">
       <DasType>int|4s</DasType>
       <Position>36</Position>
     </column>
-    <column id="314" parent="277" name="csn7">
+    <column id="315" parent="277" name="csn7">
       <DasType>int|4s</DasType>
       <Position>37</Position>
     </column>
-    <column id="315" parent="277" name="csn8">
+    <column id="316" parent="277" name="csn8">
       <DasType>int|4s</DasType>
       <Position>38</Position>
     </column>
-    <column id="316" parent="277" name="csn9">
+    <column id="317" parent="277" name="csn9">
       <DasType>int|4s</DasType>
       <Position>39</Position>
     </column>
-    <column id="317" parent="277" name="csn10">
+    <column id="318" parent="277" name="csn10">
       <DasType>int|4s</DasType>
       <Position>40</Position>
     </column>
-    <column id="318" parent="277" name="opn1">
+    <column id="319" parent="277" name="opn1">
       <DasType>int|4s</DasType>
       <Position>41</Position>
     </column>
-    <column id="319" parent="277" name="opn2">
+    <column id="320" parent="277" name="opn2">
       <DasType>int|4s</DasType>
       <Position>42</Position>
     </column>
-    <column id="320" parent="277" name="opn3">
+    <column id="321" parent="277" name="opn3">
       <DasType>int|4s</DasType>
       <Position>43</Position>
     </column>
-    <column id="321" parent="277" name="opn4">
+    <column id="322" parent="277" name="opn4">
       <DasType>int|4s</DasType>
       <Position>44</Position>
     </column>
-    <column id="322" parent="277" name="opn5">
+    <column id="323" parent="277" name="opn5">
       <DasType>int|4s</DasType>
       <Position>45</Position>
     </column>
-    <column id="323" parent="277" name="opn6">
+    <column id="324" parent="277" name="opn6">
       <DasType>int|4s</DasType>
       <Position>46</Position>
     </column>
-    <column id="324" parent="277" name="opn7">
+    <column id="325" parent="277" name="opn7">
       <DasType>int|4s</DasType>
       <Position>47</Position>
     </column>
-    <column id="325" parent="277" name="opn8">
+    <column id="326" parent="277" name="opn8">
       <DasType>int|4s</DasType>
       <Position>48</Position>
     </column>
-    <column id="326" parent="277" name="opn9">
+    <column id="327" parent="277" name="opn9">
       <DasType>int|4s</DasType>
       <Position>49</Position>
     </column>
-    <column id="327" parent="277" name="opn10">
+    <column id="328" parent="277" name="opn10">
       <DasType>int|4s</DasType>
       <Position>50</Position>
     </column>
-    <column id="328" parent="277" name="ext1_e">
+    <column id="329" parent="277" name="ext1_e">
       <DasType>int|4s</DasType>
       <Position>51</Position>
     </column>
-    <column id="329" parent="277" name="ext2_e">
+    <column id="330" parent="277" name="ext2_e">
       <DasType>int|4s</DasType>
       <Position>52</Position>
     </column>
-    <column id="330" parent="277" name="ext3_e">
+    <column id="331" parent="277" name="ext3_e">
       <DasType>int|4s</DasType>
       <Position>53</Position>
     </column>
-    <column id="331" parent="277" name="ext4_e">
+    <column id="332" parent="277" name="ext4_e">
       <DasType>int|4s</DasType>
       <Position>54</Position>
     </column>
-    <column id="332" parent="277" name="ext5_e">
+    <column id="333" parent="277" name="ext5_e">
       <DasType>int|4s</DasType>
       <Position>55</Position>
     </column>
-    <column id="333" parent="277" name="ext6_e">
+    <column id="334" parent="277" name="ext6_e">
       <DasType>int|4s</DasType>
       <Position>56</Position>
     </column>
-    <column id="334" parent="277" name="ext7_e">
+    <column id="335" parent="277" name="ext7_e">
       <DasType>int|4s</DasType>
       <Position>57</Position>
     </column>
-    <column id="335" parent="277" name="ext8_e">
+    <column id="336" parent="277" name="ext8_e">
       <DasType>int|4s</DasType>
       <Position>58</Position>
     </column>
-    <column id="336" parent="277" name="ext9_e">
+    <column id="337" parent="277" name="ext9_e">
       <DasType>int|4s</DasType>
       <Position>59</Position>
     </column>
-    <column id="337" parent="277" name="ext10_e">
+    <column id="338" parent="277" name="ext10_e">
       <DasType>int|4s</DasType>
       <Position>60</Position>
     </column>
-    <column id="338" parent="277" name="est1_e">
+    <column id="339" parent="277" name="est1_e">
       <DasType>int|4s</DasType>
       <Position>61</Position>
     </column>
-    <column id="339" parent="277" name="est2_e">
+    <column id="340" parent="277" name="est2_e">
       <DasType>int|4s</DasType>
       <Position>62</Position>
     </column>
-    <column id="340" parent="277" name="est3_e">
+    <column id="341" parent="277" name="est3_e">
       <DasType>int|4s</DasType>
       <Position>63</Position>
     </column>
-    <column id="341" parent="277" name="est4_e">
+    <column id="342" parent="277" name="est4_e">
       <DasType>int|4s</DasType>
       <Position>64</Position>
     </column>
-    <column id="342" parent="277" name="est5_e">
+    <column id="343" parent="277" name="est5_e">
       <DasType>int|4s</DasType>
       <Position>65</Position>
     </column>
-    <column id="343" parent="277" name="est6_e">
+    <column id="344" parent="277" name="est6_e">
       <DasType>int|4s</DasType>
       <Position>66</Position>
     </column>
-    <column id="344" parent="277" name="est7_e">
+    <column id="345" parent="277" name="est7_e">
       <DasType>int|4s</DasType>
       <Position>67</Position>
     </column>
-    <column id="345" parent="277" name="est8_e">
+    <column id="346" parent="277" name="est8_e">
       <DasType>int|4s</DasType>
       <Position>68</Position>
     </column>
-    <column id="346" parent="277" name="est9_e">
+    <column id="347" parent="277" name="est9_e">
       <DasType>int|4s</DasType>
       <Position>69</Position>
     </column>
-    <column id="347" parent="277" name="est10_e">
+    <column id="348" parent="277" name="est10_e">
       <DasType>int|4s</DasType>
       <Position>70</Position>
     </column>
-    <column id="348" parent="277" name="agr1_e">
+    <column id="349" parent="277" name="agr1_e">
       <DasType>int|4s</DasType>
       <Position>71</Position>
     </column>
-    <column id="349" parent="277" name="agr2_e">
+    <column id="350" parent="277" name="agr2_e">
       <DasType>int|4s</DasType>
       <Position>72</Position>
     </column>
-    <column id="350" parent="277" name="agr3_e">
+    <column id="351" parent="277" name="agr3_e">
       <DasType>int|4s</DasType>
       <Position>73</Position>
     </column>
-    <column id="351" parent="277" name="agr4_e">
+    <column id="352" parent="277" name="agr4_e">
       <DasType>int|4s</DasType>
       <Position>74</Position>
     </column>
-    <column id="352" parent="277" name="agr5_e">
+    <column id="353" parent="277" name="agr5_e">
       <DasType>int|4s</DasType>
       <Position>75</Position>
     </column>
-    <column id="353" parent="277" name="agr6_e">
+    <column id="354" parent="277" name="agr6_e">
       <DasType>int|4s</DasType>
       <Position>76</Position>
     </column>
-    <column id="354" parent="277" name="agr7_e">
+    <column id="355" parent="277" name="agr7_e">
       <DasType>int|4s</DasType>
       <Position>77</Position>
     </column>
-    <column id="355" parent="277" name="agr8_e">
+    <column id="356" parent="277" name="agr8_e">
       <DasType>int|4s</DasType>
       <Position>78</Position>
     </column>
-    <column id="356" parent="277" name="agr9_e">
+    <column id="357" parent="277" name="agr9_e">
       <DasType>int|4s</DasType>
       <Position>79</Position>
     </column>
-    <column id="357" parent="277" name="agr10_e">
+    <column id="358" parent="277" name="agr10_e">
       <DasType>int|4s</DasType>
       <Position>80</Position>
     </column>
-    <column id="358" parent="277" name="csn1_e">
+    <column id="359" parent="277" name="csn1_e">
       <DasType>int|4s</DasType>
       <Position>81</Position>
     </column>
-    <column id="359" parent="277" name="csn2_e">
+    <column id="360" parent="277" name="csn2_e">
       <DasType>int|4s</DasType>
       <Position>82</Position>
     </column>
-    <column id="360" parent="277" name="csn3_e">
+    <column id="361" parent="277" name="csn3_e">
       <DasType>int|4s</DasType>
       <Position>83</Position>
     </column>
-    <column id="361" parent="277" name="csn4_e">
+    <column id="362" parent="277" name="csn4_e">
       <DasType>int|4s</DasType>
       <Position>84</Position>
     </column>
-    <column id="362" parent="277" name="csn5_e">
+    <column id="363" parent="277" name="csn5_e">
       <DasType>int|4s</DasType>
       <Position>85</Position>
     </column>
-    <column id="363" parent="277" name="csn6_e">
+    <column id="364" parent="277" name="csn6_e">
       <DasType>int|4s</DasType>
       <Position>86</Position>
     </column>
-    <column id="364" parent="277" name="csn7_e">
+    <column id="365" parent="277" name="csn7_e">
       <DasType>int|4s</DasType>
       <Position>87</Position>
     </column>
-    <column id="365" parent="277" name="csn8_e">
+    <column id="366" parent="277" name="csn8_e">
       <DasType>int|4s</DasType>
       <Position>88</Position>
     </column>
-    <column id="366" parent="277" name="csn9_e">
+    <column id="367" parent="277" name="csn9_e">
       <DasType>int|4s</DasType>
       <Position>89</Position>
     </column>
-    <column id="367" parent="277" name="csn10_e">
+    <column id="368" parent="277" name="csn10_e">
       <DasType>int|4s</DasType>
       <Position>90</Position>
     </column>
-    <column id="368" parent="277" name="opn1_e">
+    <column id="369" parent="277" name="opn1_e">
       <DasType>int|4s</DasType>
       <Position>91</Position>
     </column>
-    <column id="369" parent="277" name="opn2_e">
+    <column id="370" parent="277" name="opn2_e">
       <DasType>int|4s</DasType>
       <Position>92</Position>
     </column>
-    <column id="370" parent="277" name="opn3_e">
+    <column id="371" parent="277" name="opn3_e">
       <DasType>int|4s</DasType>
       <Position>93</Position>
     </column>
-    <column id="371" parent="277" name="opn4_e">
+    <column id="372" parent="277" name="opn4_e">
       <DasType>int|4s</DasType>
       <Position>94</Position>
     </column>
-    <column id="372" parent="277" name="opn5_e">
+    <column id="373" parent="277" name="opn5_e">
       <DasType>int|4s</DasType>
       <Position>95</Position>
     </column>
-    <column id="373" parent="277" name="opn6_e">
+    <column id="374" parent="277" name="opn6_e">
       <DasType>int|4s</DasType>
       <Position>96</Position>
     </column>
-    <column id="374" parent="277" name="opn7_e">
+    <column id="375" parent="277" name="opn7_e">
       <DasType>int|4s</DasType>
       <Position>97</Position>
     </column>
-    <column id="375" parent="277" name="opn8_e">
+    <column id="376" parent="277" name="opn8_e">
       <DasType>int|4s</DasType>
       <Position>98</Position>
     </column>
-    <column id="376" parent="277" name="opn9_e">
+    <column id="377" parent="277" name="opn9_e">
       <DasType>int|4s</DasType>
       <Position>99</Position>
     </column>
-    <column id="377" parent="277" name="opn10_e">
+    <column id="378" parent="277" name="opn10_e">
       <DasType>int|4s</DasType>
       <Position>100</Position>
     </column>
-    <column id="378" parent="277" name="dateload">
+    <column id="379" parent="277" name="dateload">
       <DasType>string|12s</DasType>
       <Position>101</Position>
     </column>
-    <column id="379" parent="277" name="screenw">
+    <column id="380" parent="277" name="screenw">
       <DasType>int|4s</DasType>
       <Position>102</Position>
     </column>
-    <column id="380" parent="277" name="screenh">
+    <column id="381" parent="277" name="screenh">
       <DasType>int|4s</DasType>
       <Position>103</Position>
     </column>
-    <column id="381" parent="277" name="introelapse">
+    <column id="382" parent="277" name="introelapse">
       <DasType>int|4s</DasType>
       <Position>104</Position>
     </column>
-    <column id="382" parent="277" name="testelapse">
+    <column id="383" parent="277" name="testelapse">
       <DasType>int|4s</DasType>
       <Position>105</Position>
     </column>
-    <column id="383" parent="277" name="endelapse">
+    <column id="384" parent="277" name="endelapse">
       <DasType>int|4s</DasType>
       <Position>106</Position>
     </column>
-    <column id="384" parent="277" name="ipc">
+    <column id="385" parent="277" name="ipc">
       <DasType>int|4s</DasType>
       <Position>107</Position>
     </column>
-    <column id="385" parent="277" name="country">
+    <column id="386" parent="277" name="country">
       <DasType>string|12s</DasType>
       <Position>108</Position>
     </column>
-    <column id="386" parent="277" name="lat_appx_lots_of_err">
+    <column id="387" parent="277" name="lat_appx_lots_of_err">
       <DasType>double|8s</DasType>
       <Position>109</Position>
     </column>
-    <column id="387" parent="277" name="long_appx_lots_of_err">
+    <column id="388" parent="277" name="long_appx_lots_of_err">
+      <DasType>double|8s</DasType>
+      <Position>110</Position>
+    </column>
+    <column id="389" parent="277" name="test_id">
+      <DasType>int|4s</DasType>
+      <Position>111</Position>
+    </column>
+    <column id="390" parent="277" name="lat_range">
+      <DasType>string|12s</DasType>
+      <Position>112</Position>
+    </column>
+    <column id="391" parent="277" name="is_us">
+      <DasType>int|4s</DasType>
+      <Position>113</Position>
+    </column>
+    <column id="392" parent="278" name="ext1">
+      <DasType>int|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="393" parent="278" name="ext2">
+      <DasType>int|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="394" parent="278" name="ext3">
+      <DasType>int|4s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="395" parent="278" name="ext4">
+      <DasType>int|4s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="396" parent="278" name="ext5">
+      <DasType>int|4s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="397" parent="278" name="ext6">
+      <DasType>int|4s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="398" parent="278" name="ext7">
+      <DasType>int|4s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="399" parent="278" name="ext8">
+      <DasType>int|4s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="400" parent="278" name="ext9">
+      <DasType>int|4s</DasType>
+      <Position>9</Position>
+    </column>
+    <column id="401" parent="278" name="ext10">
+      <DasType>int|4s</DasType>
+      <Position>10</Position>
+    </column>
+    <column id="402" parent="278" name="est1">
+      <DasType>int|4s</DasType>
+      <Position>11</Position>
+    </column>
+    <column id="403" parent="278" name="est2">
+      <DasType>int|4s</DasType>
+      <Position>12</Position>
+    </column>
+    <column id="404" parent="278" name="est3">
+      <DasType>int|4s</DasType>
+      <Position>13</Position>
+    </column>
+    <column id="405" parent="278" name="est4">
+      <DasType>int|4s</DasType>
+      <Position>14</Position>
+    </column>
+    <column id="406" parent="278" name="est5">
+      <DasType>int|4s</DasType>
+      <Position>15</Position>
+    </column>
+    <column id="407" parent="278" name="est6">
+      <DasType>int|4s</DasType>
+      <Position>16</Position>
+    </column>
+    <column id="408" parent="278" name="est7">
+      <DasType>int|4s</DasType>
+      <Position>17</Position>
+    </column>
+    <column id="409" parent="278" name="est8">
+      <DasType>int|4s</DasType>
+      <Position>18</Position>
+    </column>
+    <column id="410" parent="278" name="est9">
+      <DasType>int|4s</DasType>
+      <Position>19</Position>
+    </column>
+    <column id="411" parent="278" name="est10">
+      <DasType>int|4s</DasType>
+      <Position>20</Position>
+    </column>
+    <column id="412" parent="278" name="agr1">
+      <DasType>int|4s</DasType>
+      <Position>21</Position>
+    </column>
+    <column id="413" parent="278" name="agr2">
+      <DasType>int|4s</DasType>
+      <Position>22</Position>
+    </column>
+    <column id="414" parent="278" name="agr3">
+      <DasType>int|4s</DasType>
+      <Position>23</Position>
+    </column>
+    <column id="415" parent="278" name="agr4">
+      <DasType>int|4s</DasType>
+      <Position>24</Position>
+    </column>
+    <column id="416" parent="278" name="agr5">
+      <DasType>int|4s</DasType>
+      <Position>25</Position>
+    </column>
+    <column id="417" parent="278" name="agr6">
+      <DasType>int|4s</DasType>
+      <Position>26</Position>
+    </column>
+    <column id="418" parent="278" name="agr7">
+      <DasType>int|4s</DasType>
+      <Position>27</Position>
+    </column>
+    <column id="419" parent="278" name="agr8">
+      <DasType>int|4s</DasType>
+      <Position>28</Position>
+    </column>
+    <column id="420" parent="278" name="agr9">
+      <DasType>int|4s</DasType>
+      <Position>29</Position>
+    </column>
+    <column id="421" parent="278" name="agr10">
+      <DasType>int|4s</DasType>
+      <Position>30</Position>
+    </column>
+    <column id="422" parent="278" name="csn1">
+      <DasType>int|4s</DasType>
+      <Position>31</Position>
+    </column>
+    <column id="423" parent="278" name="csn2">
+      <DasType>int|4s</DasType>
+      <Position>32</Position>
+    </column>
+    <column id="424" parent="278" name="csn3">
+      <DasType>int|4s</DasType>
+      <Position>33</Position>
+    </column>
+    <column id="425" parent="278" name="csn4">
+      <DasType>int|4s</DasType>
+      <Position>34</Position>
+    </column>
+    <column id="426" parent="278" name="csn5">
+      <DasType>int|4s</DasType>
+      <Position>35</Position>
+    </column>
+    <column id="427" parent="278" name="csn6">
+      <DasType>int|4s</DasType>
+      <Position>36</Position>
+    </column>
+    <column id="428" parent="278" name="csn7">
+      <DasType>int|4s</DasType>
+      <Position>37</Position>
+    </column>
+    <column id="429" parent="278" name="csn8">
+      <DasType>int|4s</DasType>
+      <Position>38</Position>
+    </column>
+    <column id="430" parent="278" name="csn9">
+      <DasType>int|4s</DasType>
+      <Position>39</Position>
+    </column>
+    <column id="431" parent="278" name="csn10">
+      <DasType>int|4s</DasType>
+      <Position>40</Position>
+    </column>
+    <column id="432" parent="278" name="opn1">
+      <DasType>int|4s</DasType>
+      <Position>41</Position>
+    </column>
+    <column id="433" parent="278" name="opn2">
+      <DasType>int|4s</DasType>
+      <Position>42</Position>
+    </column>
+    <column id="434" parent="278" name="opn3">
+      <DasType>int|4s</DasType>
+      <Position>43</Position>
+    </column>
+    <column id="435" parent="278" name="opn4">
+      <DasType>int|4s</DasType>
+      <Position>44</Position>
+    </column>
+    <column id="436" parent="278" name="opn5">
+      <DasType>int|4s</DasType>
+      <Position>45</Position>
+    </column>
+    <column id="437" parent="278" name="opn6">
+      <DasType>int|4s</DasType>
+      <Position>46</Position>
+    </column>
+    <column id="438" parent="278" name="opn7">
+      <DasType>int|4s</DasType>
+      <Position>47</Position>
+    </column>
+    <column id="439" parent="278" name="opn8">
+      <DasType>int|4s</DasType>
+      <Position>48</Position>
+    </column>
+    <column id="440" parent="278" name="opn9">
+      <DasType>int|4s</DasType>
+      <Position>49</Position>
+    </column>
+    <column id="441" parent="278" name="opn10">
+      <DasType>int|4s</DasType>
+      <Position>50</Position>
+    </column>
+    <column id="442" parent="278" name="ext1_e">
+      <DasType>int|4s</DasType>
+      <Position>51</Position>
+    </column>
+    <column id="443" parent="278" name="ext2_e">
+      <DasType>int|4s</DasType>
+      <Position>52</Position>
+    </column>
+    <column id="444" parent="278" name="ext3_e">
+      <DasType>int|4s</DasType>
+      <Position>53</Position>
+    </column>
+    <column id="445" parent="278" name="ext4_e">
+      <DasType>int|4s</DasType>
+      <Position>54</Position>
+    </column>
+    <column id="446" parent="278" name="ext5_e">
+      <DasType>int|4s</DasType>
+      <Position>55</Position>
+    </column>
+    <column id="447" parent="278" name="ext6_e">
+      <DasType>int|4s</DasType>
+      <Position>56</Position>
+    </column>
+    <column id="448" parent="278" name="ext7_e">
+      <DasType>int|4s</DasType>
+      <Position>57</Position>
+    </column>
+    <column id="449" parent="278" name="ext8_e">
+      <DasType>int|4s</DasType>
+      <Position>58</Position>
+    </column>
+    <column id="450" parent="278" name="ext9_e">
+      <DasType>int|4s</DasType>
+      <Position>59</Position>
+    </column>
+    <column id="451" parent="278" name="ext10_e">
+      <DasType>int|4s</DasType>
+      <Position>60</Position>
+    </column>
+    <column id="452" parent="278" name="est1_e">
+      <DasType>int|4s</DasType>
+      <Position>61</Position>
+    </column>
+    <column id="453" parent="278" name="est2_e">
+      <DasType>int|4s</DasType>
+      <Position>62</Position>
+    </column>
+    <column id="454" parent="278" name="est3_e">
+      <DasType>int|4s</DasType>
+      <Position>63</Position>
+    </column>
+    <column id="455" parent="278" name="est4_e">
+      <DasType>int|4s</DasType>
+      <Position>64</Position>
+    </column>
+    <column id="456" parent="278" name="est5_e">
+      <DasType>int|4s</DasType>
+      <Position>65</Position>
+    </column>
+    <column id="457" parent="278" name="est6_e">
+      <DasType>int|4s</DasType>
+      <Position>66</Position>
+    </column>
+    <column id="458" parent="278" name="est7_e">
+      <DasType>int|4s</DasType>
+      <Position>67</Position>
+    </column>
+    <column id="459" parent="278" name="est8_e">
+      <DasType>int|4s</DasType>
+      <Position>68</Position>
+    </column>
+    <column id="460" parent="278" name="est9_e">
+      <DasType>int|4s</DasType>
+      <Position>69</Position>
+    </column>
+    <column id="461" parent="278" name="est10_e">
+      <DasType>int|4s</DasType>
+      <Position>70</Position>
+    </column>
+    <column id="462" parent="278" name="agr1_e">
+      <DasType>int|4s</DasType>
+      <Position>71</Position>
+    </column>
+    <column id="463" parent="278" name="agr2_e">
+      <DasType>int|4s</DasType>
+      <Position>72</Position>
+    </column>
+    <column id="464" parent="278" name="agr3_e">
+      <DasType>int|4s</DasType>
+      <Position>73</Position>
+    </column>
+    <column id="465" parent="278" name="agr4_e">
+      <DasType>int|4s</DasType>
+      <Position>74</Position>
+    </column>
+    <column id="466" parent="278" name="agr5_e">
+      <DasType>int|4s</DasType>
+      <Position>75</Position>
+    </column>
+    <column id="467" parent="278" name="agr6_e">
+      <DasType>int|4s</DasType>
+      <Position>76</Position>
+    </column>
+    <column id="468" parent="278" name="agr7_e">
+      <DasType>int|4s</DasType>
+      <Position>77</Position>
+    </column>
+    <column id="469" parent="278" name="agr8_e">
+      <DasType>int|4s</DasType>
+      <Position>78</Position>
+    </column>
+    <column id="470" parent="278" name="agr9_e">
+      <DasType>int|4s</DasType>
+      <Position>79</Position>
+    </column>
+    <column id="471" parent="278" name="agr10_e">
+      <DasType>int|4s</DasType>
+      <Position>80</Position>
+    </column>
+    <column id="472" parent="278" name="csn1_e">
+      <DasType>int|4s</DasType>
+      <Position>81</Position>
+    </column>
+    <column id="473" parent="278" name="csn2_e">
+      <DasType>int|4s</DasType>
+      <Position>82</Position>
+    </column>
+    <column id="474" parent="278" name="csn3_e">
+      <DasType>int|4s</DasType>
+      <Position>83</Position>
+    </column>
+    <column id="475" parent="278" name="csn4_e">
+      <DasType>int|4s</DasType>
+      <Position>84</Position>
+    </column>
+    <column id="476" parent="278" name="csn5_e">
+      <DasType>int|4s</DasType>
+      <Position>85</Position>
+    </column>
+    <column id="477" parent="278" name="csn6_e">
+      <DasType>int|4s</DasType>
+      <Position>86</Position>
+    </column>
+    <column id="478" parent="278" name="csn7_e">
+      <DasType>int|4s</DasType>
+      <Position>87</Position>
+    </column>
+    <column id="479" parent="278" name="csn8_e">
+      <DasType>int|4s</DasType>
+      <Position>88</Position>
+    </column>
+    <column id="480" parent="278" name="csn9_e">
+      <DasType>int|4s</DasType>
+      <Position>89</Position>
+    </column>
+    <column id="481" parent="278" name="csn10_e">
+      <DasType>int|4s</DasType>
+      <Position>90</Position>
+    </column>
+    <column id="482" parent="278" name="opn1_e">
+      <DasType>int|4s</DasType>
+      <Position>91</Position>
+    </column>
+    <column id="483" parent="278" name="opn2_e">
+      <DasType>int|4s</DasType>
+      <Position>92</Position>
+    </column>
+    <column id="484" parent="278" name="opn3_e">
+      <DasType>int|4s</DasType>
+      <Position>93</Position>
+    </column>
+    <column id="485" parent="278" name="opn4_e">
+      <DasType>int|4s</DasType>
+      <Position>94</Position>
+    </column>
+    <column id="486" parent="278" name="opn5_e">
+      <DasType>int|4s</DasType>
+      <Position>95</Position>
+    </column>
+    <column id="487" parent="278" name="opn6_e">
+      <DasType>int|4s</DasType>
+      <Position>96</Position>
+    </column>
+    <column id="488" parent="278" name="opn7_e">
+      <DasType>int|4s</DasType>
+      <Position>97</Position>
+    </column>
+    <column id="489" parent="278" name="opn8_e">
+      <DasType>int|4s</DasType>
+      <Position>98</Position>
+    </column>
+    <column id="490" parent="278" name="opn9_e">
+      <DasType>int|4s</DasType>
+      <Position>99</Position>
+    </column>
+    <column id="491" parent="278" name="opn10_e">
+      <DasType>int|4s</DasType>
+      <Position>100</Position>
+    </column>
+    <column id="492" parent="278" name="dateload">
+      <DasType>string|12s</DasType>
+      <Position>101</Position>
+    </column>
+    <column id="493" parent="278" name="screenw">
+      <DasType>int|4s</DasType>
+      <Position>102</Position>
+    </column>
+    <column id="494" parent="278" name="screenh">
+      <DasType>int|4s</DasType>
+      <Position>103</Position>
+    </column>
+    <column id="495" parent="278" name="introelapse">
+      <DasType>int|4s</DasType>
+      <Position>104</Position>
+    </column>
+    <column id="496" parent="278" name="testelapse">
+      <DasType>int|4s</DasType>
+      <Position>105</Position>
+    </column>
+    <column id="497" parent="278" name="endelapse">
+      <DasType>int|4s</DasType>
+      <Position>106</Position>
+    </column>
+    <column id="498" parent="278" name="ipc">
+      <DasType>int|4s</DasType>
+      <Position>107</Position>
+    </column>
+    <column id="499" parent="278" name="country">
+      <DasType>string|12s</DasType>
+      <Position>108</Position>
+    </column>
+    <column id="500" parent="278" name="lat_appx_lots_of_err">
+      <DasType>double|8s</DasType>
+      <Position>109</Position>
+    </column>
+    <column id="501" parent="278" name="long_appx_lots_of_err">
       <DasType>double|8s</DasType>
       <Position>110</Position>
     </column>

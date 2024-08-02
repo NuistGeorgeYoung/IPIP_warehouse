@@ -2,24 +2,24 @@ import time
 
 from pyspark.sql import SparkSession, Window
 import os
-from pyspark.sql.functions import *
+
+from pyspark.sql.functions import row_number, lit, col, when
 
 os.environ['PYSPARK_PYTHON'] = 'D:\\Python\\Python312\\python.exe'
 
 spark = (SparkSession.builder
          .appName("mbti")
          .master("local[*]")
-         .config("spark.sql.debug.maxToStringFields", "250")
+         .config("spark.sql.debug.maxToStringFields", "150")
          .enableHiveSupport()
          .config("hive.metastore.uris", "thrift://single01:9083")
          .config("spark.sql.shuffle.partitions", "4")
-         .config("spark.default.parallelism", "4")
+         .config("spark.default.parallelism", "10")
          .config("spark.sql.parquet.writeLegacyFormat", "true")
-         .config("spark.warehouse.dir", "hdfs://single01:9000/hive312/warehouse")
          .getOrCreate()
          )
 
-st = time.time()
+
 # 建表
 # spark.sql("create database ipip_ods;")
 # spark.sql("""
@@ -143,19 +143,55 @@ st = time.time()
 # """)
 
 # 根据是否为美国进行分区，这样两个分区大小相近
-(spark.table("ipip_ods.ipip_data")
- .withColumn("is_us",
-             when(col("country").isin(["US"]), lit(1)).otherwise(lit(0))
-             )
- .withColumn("test_id", row_number()
-             .over(Window.orderBy("dateload")))
- .write
- .partitionBy("is_us")
- .mode("overwrite")
- .saveAsTable("ipip_ods.data")
- )
-# 计算sparksql的执行时间
-end = time.time()
-print(end - st)
+# (spark.table("ipip_ods.ipip_data")
+#  .withColumn(
+#     "lat_range",
+#     when(col("lat_appx_lots_of_err") < 0, lit("<0"))
+#     .when((col("lat_appx_lots_of_err") >= 0) & (col("lat_appx_lots_of_err") < 35), lit("0-35"))
+#     .when((col("lat_appx_lots_of_err") >= 35) & (col("lat_appx_lots_of_err") < 40), lit("35-40"))
+#     .when((col("lat_appx_lots_of_err") >= 40) & (col("lat_appx_lots_of_err") < 45), lit("40-45"))
+#     .otherwise(lit(">45"))
+# )
+#  .withColumn("is_us",
+#              when(col("country").isin(["US"]), lit(1)).otherwise(lit(0))
+#              )
+#  .withColumn("test_id", row_number()
+#              .over(Window.orderBy("dateload")))
+#  .write
+#  .partitionBy("lat_range", "is_us")
+#  .mode("overwrite")
+#  .saveAsTable("ipip_ods.data")
+#  )
+
+# spark.sql("""
+# SELECT
+#   cast(COUNT(CASE WHEN lat_appx_lots_of_err between 45 and 90 THEN 1  END) / COUNT(*) as float)AS us_ratio
+# FROM
+#   ipip_ods.data;
+# """).show()
+avgtime1 = 0
+avgtime2 = 0
+
+# spark.sql("select count(*) from ipip_ods.ipip_data limit 10").show
+# spark.sql("select * from rsda_dwd.customer limit 20;").show()
+# time.sleep(5)
+for k in range(1,4):
+    st = time.time()
+    spark.sql("select count(*) from ipip_ods.ipip_data where  country='US';")
+    end = time.time()
+    avgtime2+=(end-st)
+    spark.stop()
+
+print("不分区的平均时间:"+str(avgtime2/3))
+
 spark.stop()
-print("hello")
+time.sleep(3)
+for i in range(1,4):
+    st=time.time()
+    spark.sql("select count(*) from ipip_ods.data where  is_us = 1;")
+    end=time.time()
+    avgtime1 += (end - st)
+    spark.stop()
+print("分区的平均时间:" + str(avgtime1/3))
+
+spark.stop()
